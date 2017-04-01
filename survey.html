@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link href="css/styles.css" rel="stylesheet" type="text/css" />
+    <link href="css/survey.css" rel="stylesheet" type="text/css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700" rel="stylesheet">
+    <title>Accessible Frog</title>
+  </head>
+
+  <body>
+    <a href="#main">Skip to main content</a>
+    
+      <nav class="main-nav" role="navigation">
+      <ul class="nav" >
+        <li class="name"><a href="index.html">Accessible Frog</a></li>
+        <li><a href="tour.html">Tour</a></li>
+        <li><a href="#">Survey</a></li>
+      </ul>
+    </nav>
+
+    <header role="banner">  
+      <h1 class="name">ACCESSIBLE FROG</h1>
+      <span class="tag">we make awesome music</span>
+    </header>
+
+    <main id="main" role="main">
+      <div class="card">
+        <div class="flex">
+          <img class="photo" src= "img/concert01.jpg" alt="Fans enjoying a concert.">
+          <div class="container">
+            <form class="survey" action="href" method="post" role="form">
+              <fieldset>
+                <legend><h1 class= "heading">Survey</h1></legend>
+                
+                <div id="surveyButton" >Complete our survey and be entered to win an Accessible Frog swag bag.</div>
+                
+                <fieldset>
+                  <legend id="album" class="surv-quest">Who is your favorite band member:</legend><br>
+                    <div>
+                      <label for="john"><input type="radio" name="res" id="john" value="John"><span>John</span></label><br>
+                    </div>
+                  
+                    <div>
+                      <label for="hazzard"><input type="radio" name="res" id="hazzard" value="Hazzard"><span>Hazzard</span></label><br>
+                    </div>
+                  
+                    <div>
+                      <label for="bob"><input type="radio" name="res" id="bob" value="Bob"><span>Bob</span></label><br>
+                    </div>
+                  
+                    <div>
+                      <label for="sally"><input type="radio" name="res" id="sally" value="Sally"><span>Sally</span></label><br>
+                    </div>
+                </fieldset>
+                
+                <label class="surv-quest" for="albums">What is your favorite album:</label>
+                <select id="albums" name="select">
+                  <option value="" selected>Choose your favorite album</option>
+                  <optgroup label="Album Titles A-L">
+                    <option value="2">A Day Of Old</option>
+                    <option value="4">Diamond Fireworks</option>
+                    <option value="5">Enjoy Your Desire</option>
+                    <option value="3">Finding My Shadow</option>
+                    <option value="9">Heroic Forever</option>
+                  </optgroup> 
+                  
+                  <optgroup label="Album Titles M-Z">
+                    <option value="10">Midnight Fires</option>
+                    <option value="7">Music Of My Life</option>
+                    <option value="1">Party For An Angel</option>
+                    <option value="8">Song For Yesterday</option>
+                    <option value="11">Street Of The Rider</option>
+                    <option value="6">This Is For You</option>
+                  </optgroup>
+                </select><br>
+                
+                <label class="surv-quest" for="fav-song">What is your favorite song:</label>
+                <textarea id="fav-song"></textarea><br>
+                
+                <button aria-label="Submit" aria-describedby="surveyButton" class="button" type="submit">Submit</button>
+              </fieldset>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="flex">
+          <img class="photo" src= "img/the_band.jpg" alt="Drummer, Bob, and guitarist, John, performing on stage.">
+            <div class="container">
+              <form class="newsletter" action="href" method="post" role="form">
+                <fieldset>
+                <legend><h1 class= "heading">Newsletter</h1></legend>
+                  
+                  <div id="newsletterButton">Sign up to receive our quarterly newsletter with band facts, music lyrics and tour dates.</div>
+                
+                  <label for="name">Name:</label>
+                  <input type ="text" name="name" id="name"><br>
+                
+                  <label for="email">Email:</label>
+                  <input type ="email" name="email" id="email"><br>
+                
+                  <label for="email2">Retype Email:</label>
+                  <input type ="email" name="confirm_email" id="email2"><br>
+                
+                  <button aria-label="SignUp" aria-describedby="newsletterButton" class="button" type="submit">Sign Up</button>
+                </fieldset>
+              </form>
+            </div>
+        </div>
+      </div>
+    </main>
+
+    <footer role="contentinfo">
+      <ul>
+        <li><a href="#" class="social twitter" title="twitter logo"></a></li>
+        <li><a href="#" class="social youtube" title="youtube logo"></a></li>
+        <li><a href="#" class="social spotify" title="spotify logo"></a></li>
+      </ul>
+      <p class="copyright">Copyright 2015, Accessible Frog</p>
+    </footer>
+  </body>
+</html>

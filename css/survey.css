@@ -1,0 +1,113 @@
+/* Survey page styles */
+
+.photo{
+  width: 60%;
+  padding: 10px;
+}
+
+.container {
+  text-align: center;
+}
+
+form {
+  margin: 0 auto;
+  text-align: left;
+  display: inline-block;
+}
+
+fieldset {
+  border: none;
+  padding: 0;
+}
+
+.survey legend,
+.newsletter legend {
+  text-align: center;
+}
+
+.surv-quest {
+  display: inline-block;
+  margin: 10px 0 5px 0;  
+}
+
+#album {
+  text-align: left;
+  margin-bottom: -20px;
+}
+
+input[type="radio"] {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+input[type="radio"] + span {
+  line-height: 1.5em;
+}
+
+input[type="radio"] + span::before {
+  content: '';
+  display: inline-block;
+  width: 0.75em;
+  height: 0.75em;
+  vertical-align: -0.25em;
+  border-radius: 1em;
+  border: 0.125em solid #fff;
+  box-shadow: 0 0 0 0.15em #000;
+  margin-right: 0.75em;
+  transition: 0.5s ease all;
+}
+
+input[type="radio"]:checked + span::before {
+  background: #2a5044;
+  box-shadow: 0 0 0 0.25em #000;
+}
+
+input[type="radio"]:focus + span {
+  color: #2a5044;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: 0.5s ease all;
+}
+
+select,
+textarea,
+input[type="text"],
+input[type="email"] {
+  border-radius: 5px;
+  background-color: rgba(42, 80, 68, 0.2);
+  border: rgba(42, 80, 68, 0.2);
+  width: 100%;
+  outline: 0;
+  margin: 0 0 10px 0;
+  padding: 15px;
+  height: auto;
+}
+
+select:focus,
+textarea:focus,
+input[type="text"]:focus,
+input[type="email"]:focus {
+  border: solid 2px rgb(42, 80, 68);
+  border-radius: 5px;
+  color: #2a5044;
+  font-weight: bold;
+  transition: 1s ease all;
+}
+
+#newsletterButton,
+#surveyButton {
+ margin-bottom: 10px; 
+}
+
+/* Styles for larger screens */
+@media screen and (min-width: 840px) {
+  .photo{
+    width: 40%;
+  }
+}
